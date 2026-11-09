@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care - Panel Principal</title>
+    <link rel="stylesheet" href="../Styles/initial-panel.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            PetCare
+        </div>
+
+        <div class="items">
+            <a href="" class="nav-item active">Inicio</a>
+            <a href="./explore-services.html" class="nav-item">Explorar servicios</a>
+            <a href="./my-pets.html" class="nav-item">Mis mascotas</a>
+            <a href="./my-reserves.html" class="nav-item">Mis reservas</a>
+            <a href="./my-profile.html" class="nav-item">Mi perfil</a>
+        </div>
+
+        <form class="log-off-form">
+            <button type="submit" class="log-off" formaction="../index.html">
+                Cerrar sesión
+            </button>
+        </form>
+    </nav>
+
+    <main>
+        <div class="header">
+            <div class="header-titles">
+                <h1 class="title">¡Hola, bienvenido a PetCare!</h1>
+                <div class="subtitle">Encuentra los mejores cuidados para tu mascota</div>
+            </div>
+
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="../Assets/Images/Lucia.jpg" alt="Imagen de perfil">
+                </div>
+                <div class="profile-data">
+                    <div class="profile-name">Lucía Pérez</div>
+                    <div class="profile-active-pets">2 mascotas activas</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <div class="search-content">
+                <input type="text" placeholder="¿Qué servicio necesitas?">
+                <button>Buscar</button>
+            </div>
+        </div>
+
+        <div class="explore-container">
+            <div class="explore-text">
+                El bienestar de tu mascota es nuestra prioridad
+            </div>
+            <form>
+                <button type="submit" 
+                        formaction="./explore-services.html"
+                        class="explore-button">Explorar servicios</button>
+            </form>
+        </div>
+
+        <div class="services-offered">
+            <h2>¿Qué servicio buscas?</h2>
+
+            <div class="services-container">
+                <a href="" class="services">
+                    <div class="services-icon">Icon</div>
+                    <div class="services-text">Veterinaria</div>
+                </a>
+                <a href="" class="services">
+                    <div class="services-icon">Icon</div>
+                    <div class="services-text">Peluquería</div>
+                </a>
+                <a href="" class="services">
+                    <div class="services-icon">Icon</div>
+                    <div class="services-text">Guardería</div>
+                </a>
+                <a href="" class="services">
+                    <div class="services-icon">Icon</div>
+                    <div class="services-text">Paseos</div>
+                </a>
+                <a href="" class="services">
+                    <div class="services-icon">Icon</div>
+                    <div class="services-text">Cuidado temporal</div>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="providers">
+            <div class="providers-highlight">
+                <h3>Proveedores destacados</h3>
+
+                <div class="providers-info-container">
+                    <div class="providers-info">
+                        <img src="../Assets/Images/provider-1.jpg" alt="Veterinaria con un perro">
+                        <span class="providers-title">Clínica PetCare</span>
+                        <span class="providers-type">Veterinaria</span>
+                        <div class="providers-rating">
+                            <span class="providers-amount">4.9</span>
+                            <span class="providers-reviewed">128 reseñas</span>
+                        </div>
+                        <button class="providers-details">Ver detalles</button>
+                    </div>
+
+                    <div class="providers-info">
+                        <img src="../Assets/Images/provider-2.jpg" alt="Veterinaria peinando un perro">
+                        <span class="providers-title">Pelo & Amor</span>
+                        <span class="providers-type">Peluquería</span>
+                        <div class="providers-rating">
+                            <span class="providers-amount">4.8</span>
+                            <span class="providers-reviewed">96 reseñas</span>
+                        </div>
+                        <button class="providers-details">Ver detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-reserves">
+                <h3>Próximas Reservas</h3>
+                <div class="reservations-container">
+                    <div class="reservation-info">
+                        <span class="reserve-icon">Icon</span>
+                        <div class="reserve-data">
+                            <span class="reserve-title">Consulta veterinaria</span>
+                            <span class="reserve-time">12 nov · 10:30</span>
+                            <span class="reserve-place">Clínica PetCare</span>
+                        </div>
+                        <span class="reserve-status">Confirmada</span>
+                    </div>
+
+                    <div class="reservation-info">
+                        <span class="reserve-icon">Icon</span>
+                        <div class="reserve-data">
+                            <span class="reserve-title">Corte y baño</span>
+                            <span class="reserve-time">14 nov · 16:00</span>
+                            <span class="reserve-place">Pelo & Amor</span>
+                        </div>
+                        <span class="reserve-status">Pendiente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
