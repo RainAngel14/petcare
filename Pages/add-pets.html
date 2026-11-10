@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care - Agregar Mascota</title>
+    <link rel="stylesheet" href="../Styles/add-pets.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            PetCare
+        </div>
+
+        <div class="items">
+            <a href="./initial-panel.html" class="nav-item">Inicio</a>
+            <a href="./explore-services.html" class="nav-item">Explorar servicios</a>
+            <a href="" class="nav-item active">Mis mascotas</a>
+            <a href="./my-reserves.html" class="nav-item">Mis reservas</a>
+            <a href="./my-profile.html" class="nav-item">Mi perfil</a>
+        </div>
+
+        <form class="log-off-form">
+            <button type="submit" class="log-off" formaction="../index.html">
+                Cerrar sesión
+            </button>
+        </form>
+    </nav>
+
+    <main>
+        <div class="page-preview" aria-hidden="true">
+            <header class="preview-header">
+                <div>
+                    <h1>Mis mascotas</h1>
+                    <p>Administra la información de tus compañeros</p>
+                </div>
+                <div class="preview-account">
+                    <img src="../Assets/Images/Lucia.jpg" alt="">
+                    <span><strong>Lucía Pérez</strong><small>2 mascotas activas</small></span>
+                </div>
+            </header>
+            <section class="preview-content">
+                <div class="preview-section-heading">
+                    <h2>Mis compañeros</h2>
+                    <span>＋ Agregar mascota</span>
+                </div>
+                <div class="preview-cards">
+                    <div class="preview-card">
+                        <img src="../Assets/Images/max-dog.jpg" alt="">
+                        <div></div>
+                    </div>
+                    <div class="preview-card">
+                        <img src="../Assets/Images/luna-cat.jpg" alt="">
+                        <div></div>
+                    </div>
+                    <div class="preview-card preview-add-card"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page-dimmer" aria-hidden="true"></div>
+
+        <section class="pet-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+            <header class="dialog-header">
+                <div class="dialog-title">
+                    <span class="dialog-title-icon" aria-hidden="true">＋</span>
+                    <h1 id="dialog-title">Agregar mascota</h1>
+                </div>
+                <a class="close-dialog" href="./my-pets.html" aria-label="Cerrar">×</a>
+            </header>
+
+            <form class="pet-form">
+                <div class="photo-upload">
+                    <label class="photo-button" for="pet-photo" aria-label="Subir fotografía"></label>
+                    <input id="pet-photo" name="pet-photo" type="file" accept="image/*">
+                    <label class="photo-caption" for="pet-photo">Subir fotografía</label>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="pet-name">Nombre <span>*</span></label>
+                        <input id="pet-name" name="pet-name" type="text" placeholder="Nombre de tu mascota" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="pet-species">Especie <span>*</span></label>
+                        <select id="pet-species" name="pet-species" required>
+                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="pet-breed">Raza</label>
+                        <input id="pet-breed" name="pet-breed" type="text" placeholder="Raza de tu mascota">
+                    </div>
+                    <div class="form-field">
+                        <label for="pet-birthday">Fecha de nacimiento</label>
+                        <input id="pet-birthday" name="pet-birthday" type="date">
+                    </div>
+                    <fieldset class="form-field gender-field">
+                        <legend>Sexo</legend>
+                        <div class="gender-options">
+                            <input id="gender-male" name="pet-gender" type="radio" value="macho" checked>
+                            <label for="gender-male">♂ <span>Macho</span></label>
+                            <input id="gender-female" name="pet-gender" type="radio" value="hembra">
+                            <label for="gender-female">♀ <span>Hembra</span></label>
+                        </div>
+                    </fieldset>
+                    <div class="form-field">
+                        <label for="pet-weight">Peso (kg)</label>
+                        <input id="pet-weight" name="pet-weight" type="number" min="0" step="0.1" placeholder="0.0 kg">
+                    </div>
+                    <div class="form-field additional-info">
+                        <label for="pet-notes">Información adicional</label>
+                        <textarea id="pet-notes" name="pet-notes" placeholder="Alergias, condiciones médicas, notas especiales..."></textarea>
+                    </div>
+                </div>
+
+                <div class="dialog-actions">
+                    <a class="cancel-button" href="./my-pets.html">Cancelar</a>
+                    <button class="save-button" type="button">Guardar mascota</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
