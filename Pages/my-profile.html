@@ -28,7 +28,135 @@
     </nav>
 
     <main>
-        TO-DO
+        <div class="profile-page">
+            <header class="page-heading">
+                <h1>Mi perfil</h1>
+                <p>Administra tu información personal y preferencias</p>
+            </header>
+
+            <section class="identity-card" aria-label="Perfil de Lucía Pérez">
+                <img class="profile-photo" src="../Assets/Images/Lucia.jpg" alt="Lucía Pérez">
+                <div class="identity-copy">
+                    <h2>Lucía Pérez</h2>
+                    <p>lucia.perez@example.com</p>
+                </div>
+                <div class="family-count"><span aria-hidden="true">♧</span> 2 mascotas en tu familia</div>
+                <button class="edit-profile-button" type="button"><span aria-hidden="true">↗</span> Editar perfil</button>
+            </section>
+
+            <div class="profile-grid">
+                <div class="profile-column">
+                    <section class="profile-card personal-card">
+                        <h2 class="card-title"><span class="title-icon" aria-hidden="true">♙</span>Información personal</h2>
+                        <div class="field-grid">
+                            <div class="profile-field">
+                                <label for="first-name">Nombre</label>
+                                <input id="first-name" type="text" value="Lucía">
+                            </div>
+                            <div class="profile-field">
+                                <label for="last-name">Apellido</label>
+                                <input id="last-name" type="text" value="Pérez">
+                            </div>
+                            <div class="profile-field">
+                                <label for="email">Correo electrónico</label>
+                                <input id="email" type="email" value="lucia.perez@example.com">
+                            </div>
+                            <div class="profile-field">
+                                <label for="phone">Número de teléfono</label>
+                                <input id="phone" type="tel" value="+34 612 345 678">
+                            </div>
+                            <div class="profile-field">
+                                <label for="birthday">Fecha de nacimiento</label>
+                                <input id="birthday" type="text" value="15 / 06 / 1994">
+                            </div>
+                            <p class="privacy-note">Solo tú puedes ver<br>estos datos personales.</p>
+                        </div>
+                    </section>
+
+                    <section class="profile-card address-card">
+                        <h2 class="card-title"><span class="title-icon" aria-hidden="true">♧</span>Dirección</h2>
+                        <div class="field-grid">
+                            <div class="profile-field">
+                                <label for="city">Ciudad</label>
+                                <input id="city" type="text" value="Madrid">
+                            </div>
+                            <div class="profile-field">
+                                <label for="postal-code">Código postal</label>
+                                <input id="postal-code" type="text" value="28010">
+                            </div>
+                            <div class="profile-field full-width">
+                                <label for="address">Dirección</label>
+                                <input id="address" type="text" value="Calle de Santa Engracia, 42, 2.º B">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="profile-column">
+                    <section class="profile-card notifications-card">
+                        <h2 class="card-title"><span class="title-icon" aria-hidden="true">♧</span>Notificaciones</h2>
+                        <div class="notification-list">
+                            <label class="notification-option">
+                                <span><strong>Avisos de reservas</strong><small>Confirmaciones y cambios de tus citas</small></span>
+                                <input type="checkbox" checked>
+                                <span class="toggle" aria-hidden="true"></span>
+                            </label>
+                            <label class="notification-option">
+                                <span><strong>Promociones</strong><small>Ofertas y novedades de PetCare</small></span>
+                                <input type="checkbox">
+                                <span class="toggle" aria-hidden="true"></span>
+                            </label>
+                            <label class="notification-option">
+                                <span><strong>Recordatorios de cuidado</strong><small>Vacunas, revisiones y bienestar</small></span>
+                                <input type="checkbox" checked>
+                                <span class="toggle" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="profile-card preferences-card">
+                        <h2 class="card-title"><span class="title-icon" aria-hidden="true">♧</span>Preferencias</h2>
+                        <fieldset class="preference-group">
+                            <legend>Tipo de mascota</legend>
+                            <div class="preference-options pet-type-options">
+                                <label class="selected"><input type="checkbox" checked>Perros</label>
+                                <label><input type="checkbox">Gatos</label>
+                                <label><input type="checkbox">Otros</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="preference-group">
+                            <legend>Servicios de interés</legend>
+                            <div class="preference-options service-options">
+                                <label class="selected"><input type="checkbox" checked>Veterinaria</label>
+                                <label class="selected"><input type="checkbox" checked>Peluquería</label>
+                                <label><input type="checkbox">Paseos</label>
+                                <label><input type="checkbox">Guardería</label>
+                                <label><input type="checkbox">Cuidado temporal</label>
+                            </div>
+                        </fieldset>
+                    </section>
+                </div>
+            </div>
+
+            <section class="profile-card security-card">
+                <div class="security-copy">
+                    <h2 class="card-title"><span class="title-icon" aria-hidden="true">♙</span>Seguridad</h2>
+                    <p>Gestiona tu contraseña y los datos de acceso a tu cuenta.</p>
+                </div>
+                <div class="security-actions">
+                    <button type="button">Cambiar contraseña</button>
+                    <button type="button">Actualizar credenciales</button>
+                </div>
+            </section>
+
+            <footer class="profile-footer">
+                <p>Revisa tu información antes de guardar los cambios.</p>
+                <div>
+                    <button class="cancel-button" type="button">Cancelar</button>
+                    <button class="save-button" type="button">Guardar cambios</button>
+                </div>
+            </footer>
+        </div>
     </main>
 </body>
 </html>

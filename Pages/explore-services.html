@@ -28,7 +28,130 @@
     </nav>
 
     <main>
-        TO-DO
+        <div class="services-page">
+            <header class="page-header">
+                <div class="page-heading">
+                    <h1>Explora servicios para tu mascota</h1>
+                    <p>Descubre profesionales de confianza y encuentra el cuidado ideal para tu mejor amigo.</p>
+                </div>
+                <div class="account-summary" aria-label="Lucía Pérez, 2 mascotas activas">
+                    <img src="../Assets/Images/Lucia.jpg" alt="Lucía Pérez">
+                    <span><strong>Lucía Pérez</strong><small>2 mascotas activas</small></span>
+                </div>
+            </header>
+
+            <form class="search-bar" role="search">
+                <label class="search-icon" for="service-search" aria-hidden="true">⌕</label>
+                <input id="service-search" type="search" placeholder="Busca servicios, establecimientos o profesionales">
+                <button type="submit">Buscar</button>
+            </form>
+
+            <section class="filter-panel" aria-label="Filtros de servicios">
+                <div class="category-filters" role="group" aria-label="Categorías de servicio">
+                    <button class="category-button active" type="button">Todos</button>
+                    <button class="category-button" type="button">Veterinaria</button>
+                    <button class="category-button" type="button">Peluquería</button>
+                    <button class="category-button" type="button">Guardería</button>
+                    <button class="category-button" type="button">Paseos</button>
+                    <button class="category-button" type="button">Cuidado temporal</button>
+                </div>
+                <div class="filter-selects">
+                    <label class="filter-select">
+                        <span>Ubicación</span>
+                        <select aria-label="Ubicación"><option>Madrid, España</option></select>
+                    </label>
+                    <label class="filter-select">
+                        <span>Precio</span>
+                        <select aria-label="Precio"><option>Cualquier precio</option></select>
+                    </label>
+                    <label class="filter-select">
+                        <span>Calificación</span>
+                        <select aria-label="Calificación"><option>Todas las calificaciones</option></select>
+                    </label>
+                    <label class="filter-select">
+                        <span>Disponibilidad</span>
+                        <select aria-label="Disponibilidad"><option>Cualquier fecha</option></select>
+                    </label>
+                </div>
+            </section>
+
+            <section class="providers-section" aria-labelledby="providers-heading">
+                <div class="providers-heading">
+                    <div>
+                        <h2 id="providers-heading">Encuentra tu próximo cuidado</h2>
+                        <p>3 proveedores en Madrid</p>
+                    </div>
+                    <div class="sort-control">
+                        <span>Ordenar por</span>
+                        <div role="group" aria-label="Ordenar proveedores">
+                            <button class="selected" type="button">Mejor calificación</button>
+                            <button type="button">Precio</button>
+                            <button type="button">Popularidad</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="provider-grid">
+                    <article class="provider-card">
+                        <div class="provider-photo">
+                            <img src="../Assets/Images/provider-1.jpg" alt="Veterinaria atendiendo a un perro">
+                            <span class="availability">Disponible hoy</span>
+                        </div>
+                        <div class="provider-info">
+                            <span class="service-tag">Veterinaria</span>
+                            <h3>Clínica PetCare</h3>
+                            <p class="provider-description">Chequeos, vacunas y atención cercana para cuidar su salud en cada etapa.</p>
+                            <p class="provider-location"><span aria-hidden="true">♧</span> Chamberí, Madrid · a 1,2 km</p>
+                            <p class="provider-rating"><span aria-hidden="true">★</span><strong>4.9</strong> (128 reseñas)</p>
+                            <p class="provider-price">Desde <strong>45,00 €</strong> / consulta</p>
+                            <div class="provider-actions">
+                                <button class="details-button" type="button">Ver detalles</button>
+                                <button class="book-button" type="button">Reservar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="provider-card">
+                        <div class="provider-photo">
+                            <img src="../Assets/Images/provider-2.jpg" alt="Profesional peluquera cuidando a un perro">
+                            <span class="availability">Disponible mañana</span>
+                        </div>
+                        <div class="provider-info">
+                            <span class="service-tag">Peluquería</span>
+                            <h3>Pelo &amp; Amor</h3>
+                            <p class="provider-description">Baño, corte y mucho cariño para que tu mascota se vea y se sienta genial.</p>
+                            <p class="provider-location"><span aria-hidden="true">♧</span> Salamanca, Madrid · a 2,4 km</p>
+                            <p class="provider-rating"><span aria-hidden="true">★</span><strong>4.8</strong> (96 reseñas)</p>
+                            <p class="provider-price">Desde <strong>30,00 €</strong> / sesión</p>
+                            <div class="provider-actions">
+                                <button class="details-button" type="button">Ver detalles</button>
+                                <button class="book-button" type="button">Reservar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="provider-card">
+                        <div class="provider-photo">
+                            <img src="../Assets/Images/initial-panel-service.jpg" alt="Paseadora caminando con un perro en el parque">
+                            <span class="availability">Disponible hoy</span>
+                        </div>
+                        <div class="provider-info">
+                            <span class="service-tag">Paseos</span>
+                            <h3>Paseos con Ana</h3>
+                            <p class="provider-description">Paseos a su ritmo, juegos al aire libre y atención personalizada.</p>
+                            <p class="provider-location"><span aria-hidden="true">♧</span> Retiro, Madrid · a 1,8 km</p>
+                            <p class="provider-rating"><span aria-hidden="true">★</span><strong>4.7</strong> (84 reseñas)</p>
+                            <p class="provider-price">Desde <strong>18,00 €</strong> / paseo</p>
+                            <div class="provider-actions">
+                                <button class="details-button" type="button">Ver detalles</button>
+                                <button class="book-button" type="button">Reservar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <p class="providers-footer">Cuidadores cercanos. Reservas sencillas. Mascotas felices.</p>
+            </section>
+        </div>
     </main>
 </body>
 </html>
