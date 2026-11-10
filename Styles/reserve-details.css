@@ -272,14 +272,14 @@ main{
 
 .page-dimmer{
     position: fixed;
-    inset: 0 0 0 20%;
+    inset: 0 0 0 220px;
     background-color: rgb(48 66 70 / 48%);
 }
 
 .detail-dialog{
     position: fixed;
     top: 50%;
-    left: 60%;
+    left: calc(220px + (100% - 220px) / 2);
     width: min(660px, calc(100% - 40px));
     height: min(590px, calc(100dvh - 40px));
     margin: auto;
@@ -554,12 +554,34 @@ main{
     }
 
     .page-dimmer{
-        left: 150px;
+        left: 220px;
     }
 
     .detail-dialog{
-        left: calc(150px + (100% - 150px) / 2);
-        width: min(660px, calc(100% - 190px));
+        left: calc(220px + (100% - 220px) / 2);
+        width: min(660px, calc(100% - 260px));
+    }
+}
+
+@media (max-width: 700px){
+    main{
+        height: calc(100dvh - 64px);
+        min-height: 0;
+    }
+
+    .reservation-preview{
+        height: 100%;
+    }
+
+    .page-dimmer{
+        inset: 64px 0 0;
+    }
+
+    .detail-dialog{
+        top: calc(50% + 32px);
+        left: 50%;
+        width: calc(100% - 24px);
+        height: min(590px, calc(100dvh - 88px));
     }
 }
 
@@ -601,7 +623,7 @@ main{
     }
 
     main{
-        height: calc(100dvh - 90px);
+        height: calc(100dvh - 64px);
         min-height: 0;
     }
 
@@ -682,15 +704,15 @@ main{
     }
 
     .detail-dialog{
-        top: calc(50% + 45px);
+        top: calc(50% + 32px);
         left: 50%;
         width: calc(100% - 24px);
-        height: min(620px, calc(100dvh - 110px));
+        height: min(620px, calc(100dvh - 88px));
         border-radius: 15px;
     }
 
     .page-dimmer{
-        inset: 95px 0 0;
+        inset: 64px 0 0;
     }
 
     .dialog-header{

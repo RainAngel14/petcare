@@ -116,3 +116,64 @@ body{
     font-weight: 600;
     color: #12343D;
 }
+
+@media (max-width: 760px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    .container .left-panel{
+        position: relative;
+        flex: none;
+        height: 190px;
+        overflow: hidden;
+    }
+
+    .container .left-panel img{
+        height: 100%;
+    }
+
+    .logo{
+        z-index: 1;
+        top: 18px;
+        left: 18px;
+        padding: 8px 12px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        font-size: 20px;
+    }
+
+    .container .right-panel{
+        flex: 1;
+        padding: 36px 24px;
+    }
+
+    .login{
+        width: min(100%, 440px);
+    }
+
+    .title{
+        font-size: clamp(32px, 8vw, 40px);
+    }
+}
+
+@media (max-width: 420px){
+    .container .left-panel{
+        height: 150px;
+    }
+
+    .container .right-panel{
+        padding: 28px 20px;
+    }
+
+    .login{
+        gap: 13px;
+    }
+
+    .login-form input{
+        padding: 14px;
+    }
+}

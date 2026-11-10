@@ -216,11 +216,13 @@ main{
 
 .pet-dialog{
     position: fixed;
-    inset: 0;
+    top: 50%;
+    left: calc(220px + (100% - 220px) / 2);
     width: min(560px, calc(100% - 32px));
     height: min(650px, calc(100dvh - 48px));
     min-height: 0;
-    margin: auto;
+    margin: 0;
+    transform: translate(-50%, -50%);
     overflow-y: auto;
     background-color: #FFFFFF;
     border-radius: 13px;
@@ -522,12 +524,24 @@ main{
         padding-left: 12px;
     }
 
+    main,
+    .page-preview{
+        min-height: calc(100dvh - 64px);
+    }
+
     .preview-cards{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .preview-card:last-child{
         display: none;
+    }
+
+    .pet-dialog{
+        top: calc(50% + 32px);
+        left: 50%;
+        height: min(650px, calc(100dvh - 88px));
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -569,11 +583,11 @@ main{
     }
 
     main{
-        min-height: calc(100dvh - 90px);
+        min-height: calc(100dvh - 64px);
     }
 
     .page-preview{
-        min-height: calc(100dvh - 90px);
+        min-height: calc(100dvh - 64px);
     }
 
     .preview-account span{
@@ -589,10 +603,12 @@ main{
     }
 
     .pet-dialog{
-        top: 95px;
+        top: 76px;
+        left: 50%;
         bottom: 10px;
         width: min(560px, calc(100% - 24px));
         height: auto;
+        transform: translateX(-50%);
     }
 
     .dialog-header{

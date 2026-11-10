@@ -165,3 +165,107 @@ li::before {
     color: #25B7A5;
     font-weight: 600;
 }
+
+@media (max-width: 850px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    .container .left-panel{
+        flex: none;
+        padding: 24px;
+    }
+
+    .logo{
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .left-panel .content{
+        margin: 28px 0 12px;
+    }
+
+    .content h1{
+        font-size: clamp(30px, 6vw, 40px);
+    }
+
+    .content ul{
+        margin-top: 12px;
+    }
+
+    .content li{
+        margin: 8px 0;
+    }
+
+    .container .right-panel{
+        flex: 1;
+        padding: 32px 24px;
+    }
+
+    .register{
+        width: min(100%, 520px);
+        margin: 0 auto;
+    }
+
+    .register .title{
+        font-size: clamp(30px, 6vw, 38px);
+        margin-bottom: 18px;
+    }
+
+    .selection-container{
+        gap: 16px;
+    }
+
+    .selection,
+    .selection-active{
+        flex: 1;
+        padding: 14px 12px;
+    }
+}
+
+@media (max-width: 480px){
+    .container .left-panel{
+        padding: 20px;
+    }
+
+    .left-panel .content{
+        margin-top: 24px;
+    }
+
+    .content h1{
+        font-size: 30px;
+    }
+
+    .content li{
+        font-size: 14px;
+    }
+
+    .container .right-panel{
+        padding: 26px 20px;
+    }
+
+    .register .title{
+        font-size: 30px;
+    }
+
+    .selection-container{
+        gap: 10px;
+    }
+
+    .selection,
+    .selection-active{
+        padding: 12px 8px;
+    }
+
+    .selection-label{
+        margin-left: 4px;
+        font-size: 14px;
+    }
+
+    .input-container input{
+        padding: 14px;
+    }
+}
