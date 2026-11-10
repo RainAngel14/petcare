@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care - Detalle de la reserva</title>
+    <link rel="stylesheet" href="../Styles/reserve-details.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            PetCare
+        </div>
+
+        <div class="items">
+            <a href="./initial-panel.html" class="nav-item">Inicio</a>
+            <a href="./explore-services.html" class="nav-item">Explorar servicios</a>
+            <a href="./my-pets.html" class="nav-item">Mis mascotas</a>
+            <a href="./my-reserves.html" class="nav-item active">Mis reservas</a>
+            <a href="./my-profile.html" class="nav-item">Mi perfil</a>
+        </div>
+
+        <form class="log-off-form">
+            <button type="submit" class="log-off" formaction="../index.html">
+                Cerrar sesión
+            </button>
+        </form>
+    </nav>
+
+    <main>
+        <div class="reservation-preview" aria-hidden="true">
+            <header class="preview-header">
+                <div>
+                    <h1>Mis reservas</h1>
+                    <p>Consulta y administra las citas de tus mascotas</p>
+                </div>
+                <div class="preview-account">
+                    <img src="../Assets/Images/Lucia.jpg" alt="">
+                    <span><strong>Lucía Pérez</strong><small>2 mascotas activas</small></span>
+                </div>
+            </header>
+            <section class="preview-content">
+                <div class="preview-section-heading">
+                    <h2>Tus reservas</h2>
+                    <span>＋ Nueva reserva</span>
+                </div>
+                <div class="preview-filters">
+                    <span>Todas　4</span><span>Próximas　2</span><span>Completadas　1</span><span>Canceladas　1</span>
+                </div>
+                <div class="preview-list">
+                    <article class="preview-reservation">
+                        <span class="preview-icon">♡</span>
+                        <div><strong>Consulta veterinaria</strong><small>Clínica PetCare</small><p>Luna　　12 nov 2026　　10:30 – 11:00</p></div>
+                        <span class="preview-status">Confirmada</span><strong class="preview-price">45,00 €</strong>
+                    </article>
+                    <article class="preview-reservation">
+                        <span class="preview-icon">✂</span>
+                        <div><strong>Corte y baño</strong><small>Pelo &amp; Amor</small><p>Milo　　14 nov 2026　　16:00 – 17:00</p></div>
+                        <span class="preview-status pending">Pendiente</span><strong class="preview-price">30,00 €</strong>
+                    </article>
+                    <article class="preview-reservation">
+                        <span class="preview-icon">♙</span>
+                        <div><strong>Paseo individual</strong><small>Paseos con Ana</small><p>Luna　　05 nov 2026　　09:00 – 10:00</p></div>
+                        <span class="preview-status completed">Completada</span><strong class="preview-price">18,00 €</strong>
+                    </article>
+                    <article class="preview-reservation">
+                        <span class="preview-icon">⌂</span>
+                        <div><strong>Guardería diurna</strong><small>Huellitas Club</small><p>Milo　　02 nov 2026　　08:00 – 18:00</p></div>
+                        <span class="preview-status cancelled">Cancelada</span><strong class="preview-price">25,00 €</strong>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="page-dimmer" aria-hidden="true"></div>
+
+        <section class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+            <header class="dialog-header">
+                <div>
+                    <h1 id="detail-title">Detalle de la reserva</h1>
+                    <p>Reserva #PC-2048</p>
+                </div>
+                <a class="close-dialog" href="./my-reserves.html" aria-label="Volver a mis reservas">×</a>
+            </header>
+
+            <div class="detail-content">
+                <section class="service-summary" aria-label="Resumen del servicio">
+                    <span class="summary-icon" aria-hidden="true">♡</span>
+                    <div class="summary-copy">
+                        <h2>Consulta veterinaria</h2>
+                        <p>Clínica PetCare</p>
+                    </div>
+                    <span class="summary-status">Confirmada</span>
+                </section>
+
+                <div class="detail-grid">
+                    <section class="detail-item">
+                        <span class="detail-icon" aria-hidden="true">♧</span>
+                        <div>
+                            <h3>Proveedor</h3>
+                            <strong>Clínica PetCare</strong>
+                            <p>Dra. Elena García</p>
+                        </div>
+                    </section>
+                    <section class="detail-item">
+                        <span class="detail-icon" aria-hidden="true">♧</span>
+                        <div>
+                            <h3>Mascota</h3>
+                            <strong>Luna</strong>
+                            <p>Golden retriever · 3 años</p>
+                        </div>
+                    </section>
+                    <section class="detail-item">
+                        <span class="detail-icon" aria-hidden="true">▦</span>
+                        <div>
+                            <h3>Fecha</h3>
+                            <strong><time datetime="2026-11-12">12 nov 2026</time></strong>
+                            <p>Jueves</p>
+                        </div>
+                    </section>
+                    <section class="detail-item">
+                        <span class="detail-icon" aria-hidden="true">◷</span>
+                        <div>
+                            <h3>Horario</h3>
+                            <strong><time datetime="10:30">10:30</time> – <time datetime="11:00">11:00</time></strong>
+                            <p>Duración: 30 minutos</p>
+                        </div>
+                    </section>
+                    <section class="detail-item location-item">
+                        <span class="detail-icon" aria-hidden="true">⌖</span>
+                        <div>
+                            <h3>Dónde será la cita</h3>
+                            <strong>Clínica PetCare</strong>
+                            <p>Calle de Alcalá, 128 · Madrid</p>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="total-section">
+                    <div>
+                        <h2>Precio total</h2>
+                        <p>IVA incluido · Pago en la clínica</p>
+                    </div>
+                    <strong>45,00 €</strong>
+                </section>
+
+                <p class="notice"><span aria-hidden="true">ⓘ</span> Puedes reprogramar o cancelar sin coste hasta 24 horas antes de la cita.</p>
+
+                <footer class="dialog-actions">
+                    <a class="cancel-link" href="./my-reserves.html">Cancelar reserva</a>
+                    <a class="reschedule-link" href="./my-reserves.html"><span aria-hidden="true">▦</span> Reprogramar</a>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

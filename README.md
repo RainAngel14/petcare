@@ -25,6 +25,7 @@ Cada página enlaza directamente su hoja de estilo correspondiente desde el `<he
 | Explorar servicios | `Pages/explore-services.html` | `Styles/explore-services.css` |
 | Mis mascotas | `Pages/my-pets.html` | `Styles/my-pets.css` |
 | Mis reservas | `Pages/my-reserves.html` | `Styles/my-reserves.css` |
+| Detalle de la reserva | `Pages/reserve-details.html` | `Styles/reserve-details.css` |
 | Mi perfil | `Pages/my-profile.html` | `Styles/my-profile.css` |
 
 La página de inicio de sesión es `index.html`, en la raíz; las demás páginas están en `Pages/`. La navegación entre páginas se realiza mediante enlaces HTML y acciones de formulario con rutas relativas. Por ejemplo, desde un archivo en `Pages/`, se enlaza otra página de esa carpeta con `./otra-pagina.html`, la raíz con `../index.html` y una hoja de estilo o imagen con `../Styles/...` o `../Assets/Images/...`. La página raíz usa rutas como `./Pages/...` y `./Assets/Images/...`.

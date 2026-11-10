@@ -28,7 +28,127 @@
     </nav>
 
     <main>
-        TO-DO
+        <header class="page-header">
+            <div class="page-heading">
+                <h1>Mis reservas</h1>
+                <p>Consulta y administra las citas de tus mascotas</p>
+            </div>
+            <div class="account-summary" aria-label="Lucía Pérez, 2 mascotas activas">
+                <img src="../Assets/Images/Lucia.jpg" alt="Lucía Pérez">
+                <span>
+                    <strong>Lucía Pérez</strong>
+                    <small>2 mascotas activas</small>
+                </span>
+            </div>
+        </header>
+
+        <section class="reservations-section" aria-labelledby="reservations-heading">
+            <div class="section-heading">
+                <div class="section-title">
+                    <h2 id="reservations-heading">Tus reservas</h2>
+                    <p>2 próximas citas para tus mascotas</p>
+                </div>
+                <button class="new-reservation-button" type="button">＋ <span>Nueva reserva</span></button>
+            </div>
+
+            <div class="reservation-filters" role="group" aria-label="Filtrar reservas">
+                <button class="filter-button active" type="button">Todas <span>4</span></button>
+                <button class="filter-button" type="button">Próximas <span>2</span></button>
+                <button class="filter-button" type="button">Completadas <span>1</span></button>
+                <button class="filter-button" type="button">Canceladas <span>1</span></button>
+            </div>
+
+            <div class="reservation-list">
+                <article class="reservation-card">
+                    <div class="service-icon" aria-hidden="true">♡</div>
+                    <div class="reservation-main">
+                        <div class="reservation-description">
+                            <h3>Consulta veterinaria</h3>
+                            <p>Clínica PetCare</p>
+                        </div>
+                        <div class="reservation-meta">
+                            <span><span class="meta-icon" aria-hidden="true">♧</span>Luna</span>
+                            <span><span class="meta-icon" aria-hidden="true">▦</span><time datetime="2026-11-12">12 nov 2026</time></span>
+                            <span><span class="meta-icon" aria-hidden="true">◷</span><time datetime="10:30">10:30</time> – <time datetime="11:00">11:00</time></span>
+                        </div>
+                    </div>
+                    <div class="reservation-status status-confirmed">Confirmada</div>
+                    <div class="reservation-price">45,00 €</div>
+                    <div class="reservation-actions">
+                        <button class="cancel-reservation" type="button">Cancelar reserva</button>
+                        <button class="secondary-button" type="button">Reprogramar</button>
+                        <a class="details-button" href="./reserve-details.html">Ver detalles</a>
+                    </div>
+                </article>
+
+                <article class="reservation-card">
+                    <div class="service-icon" aria-hidden="true">✂</div>
+                    <div class="reservation-main">
+                        <div class="reservation-description">
+                            <h3>Corte y baño</h3>
+                            <p>Pelo &amp; Amor</p>
+                        </div>
+                        <div class="reservation-meta">
+                            <span><span class="meta-icon" aria-hidden="true">♧</span>Milo</span>
+                            <span><span class="meta-icon" aria-hidden="true">▦</span><time datetime="2026-11-14">14 nov 2026</time></span>
+                            <span><span class="meta-icon" aria-hidden="true">◷</span><time datetime="16:00">16:00</time> – <time datetime="17:00">17:00</time></span>
+                        </div>
+                    </div>
+                    <div class="reservation-status status-pending">Pendiente</div>
+                    <div class="reservation-price">30,00 €</div>
+                    <div class="reservation-actions">
+                        <button class="cancel-reservation" type="button">Cancelar reserva</button>
+                        <button class="secondary-button" type="button">Reprogramar</button>
+                        <a class="details-button" href="./reserve-details.html">Ver detalles</a>
+                    </div>
+                </article>
+
+                <article class="reservation-card">
+                    <div class="service-icon" aria-hidden="true">♙</div>
+                    <div class="reservation-main">
+                        <div class="reservation-description">
+                            <h3>Paseo individual</h3>
+                            <p>Paseos con Ana</p>
+                        </div>
+                        <div class="reservation-meta">
+                            <span><span class="meta-icon" aria-hidden="true">♧</span>Luna</span>
+                            <span><span class="meta-icon" aria-hidden="true">▦</span><time datetime="2026-11-05">05 nov 2026</time></span>
+                            <span><span class="meta-icon" aria-hidden="true">◷</span><time datetime="09:00">09:00</time> – <time datetime="10:00">10:00</time></span>
+                        </div>
+                    </div>
+                    <div class="reservation-status status-completed">Completada</div>
+                    <div class="reservation-price">18,00 €</div>
+                    <div class="reservation-actions">
+                        <a class="details-button" href="./reserve-details.html">Ver detalles</a>
+                    </div>
+                </article>
+
+                <article class="reservation-card">
+                    <div class="service-icon" aria-hidden="true">⌂</div>
+                    <div class="reservation-main">
+                        <div class="reservation-description">
+                            <h3>Guardería diurna</h3>
+                            <p>Huellitas Club</p>
+                        </div>
+                        <div class="reservation-meta">
+                            <span><span class="meta-icon" aria-hidden="true">♧</span>Milo</span>
+                            <span><span class="meta-icon" aria-hidden="true">▦</span><time datetime="2026-11-02">02 nov 2026</time></span>
+                            <span><span class="meta-icon" aria-hidden="true">◷</span><time datetime="08:00">08:00</time> – <time datetime="18:00">18:00</time></span>
+                        </div>
+                    </div>
+                    <div class="reservation-status status-cancelled">Cancelada</div>
+                    <div class="reservation-price">25,00 €</div>
+                    <div class="reservation-actions">
+                        <a class="details-button" href="./reserve-details.html">Ver detalles</a>
+                    </div>
+                </article>
+            </div>
+
+            <footer class="reservations-footer">
+                <span>Mostrando 4 de 4 reservas</span>
+                <span>Todas tus citas, en un mismo lugar.</span>
+            </footer>
+        </section>
     </main>
 </body>
 </html>
