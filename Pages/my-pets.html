@@ -28,7 +28,77 @@
     </nav>
 
     <main>
-        TO-DO
+        <header class="page-header">
+            <div class="page-heading">
+                <h1>Mis mascotas</h1>
+                <p>Administra la información de tus compañeros</p>
+            </div>
+            <div class="account-summary" aria-label="Lucía Pérez, 2 mascotas activas">
+                <img class="account-avatar" src="../Assets/Images/Lucia.jpg" alt="Lucía Pérez">
+                <span>
+                    <strong>Lucía Pérez</strong>
+                    <small>2 mascotas activas</small>
+                </span>
+            </div>
+        </header>
+
+        <section class="pets-section" aria-labelledby="pets-heading">
+            <div class="section-heading">
+                <h2 id="pets-heading">Mis compañeros</h2>
+                <button class="button button-primary" type="button">＋ Agregar mascota</button>
+            </div>
+
+            <div class="pet-grid">
+                <article class="pet-card">
+                    <div class="pet-photo">
+                        <img src="../Assets/Images/max-dog.jpg" alt="Max, un golden retriever">
+                        <span class="pet-type">Perro</span>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Max</h3>
+                        <dl class="pet-details">
+                            <div><dt>Raza:</dt><dd>Golden Retriever</dd></div>
+                            <div><dt>Edad:</dt><dd>3 años</dd></div>
+                            <div><dt>Sexo:</dt><dd>Macho</dd></div>
+                            <div><dt>Peso:</dt><dd>28 kg</dd></div>
+                        </dl>
+                        <div class="pet-actions">
+                            <button class="button button-secondary" type="button">Ver detalles</button>
+                            <button class="button button-outline" type="button">Editar</button>
+                        </div>
+                        <button class="delete-button" type="button">Eliminar</button>
+                    </div>
+                </article>
+
+                <article class="pet-card">
+                    <div class="pet-photo">
+                        <img src="../Assets/Images/luna-cat.jpg" alt="Luna, una gata blanca">
+                        <span class="pet-type">Gato</span>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Luna</h3>
+                        <dl class="pet-details">
+                            <div><dt>Raza:</dt><dd>Persa</dd></div>
+                            <div><dt>Edad:</dt><dd>2 años</dd></div>
+                            <div><dt>Sexo:</dt><dd>Hembra</dd></div>
+                            <div><dt>Peso:</dt><dd>4 kg</dd></div>
+                        </dl>
+                        <div class="pet-actions">
+                            <button class="button button-secondary" type="button">Ver detalles</button>
+                            <button class="button button-outline" type="button">Editar</button>
+                        </div>
+                        <button class="delete-button" type="button">Eliminar</button>
+                    </div>
+                </article>
+
+                <article class="add-pet-card">
+                    <span class="add-pet-icon" aria-hidden="true">＋</span>
+                    <h3>Agregar nueva mascota</h3>
+                    <p>Registra a tu compañero</p>
+                    <button class="button button-primary" type="button">＋ Agregar mascota</button>
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 </html>
